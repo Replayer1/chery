@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style\global.css">
+    <link rel="stylesheet" href="style\service.css">
+    <title>Chery</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+          <div class="header__logo">
+            <a href="index.html">
+              <h1>Chery</h1>
+            </a>
+          </div>
+          <div class="header__links">
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="about-us.html">О нас</a></li>
+              <li><a href="service.html">Услуги</a></li>
+              <li><a href="catalog.html">Товары</a></li>
+            </ul>
+          </div>
+          <div class="header__sign">
+            <ul>
+              <li><a href="authorization.html">Вход</a></li>
+              <li><a href="registration.html">Регистрация</a></li>
+            </ul>
+          </div>
+          <div class="burger" onclick="burgerTogle()">
+            <i id="burger-btn" class="bi bi-list"></i>
+          </div>
+        </div>
+      </header>
+      <div class="burger-container" id="burger">
+        <ul>
+          <li>
+            <a href="authorization.html"><i class="bi bi-door-open"></i> Вход</a>
+          </li>
+          <li>
+            <a href="registration.html"
+              ><i class="bi bi-pencil-square"></i> Регистрация</a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about-us.html">О нас</a></li>
+          <li><a href="service.html">Услуги</a></li>
+          <li><a href="catalog.html">Товары</a></li>
+        </ul>
+      </div>
+    <main>
+        <h1>Запись на услуги</h1>
+        <section class="main_section_1" id="app1">
+            <div class="section_1 section_1-left">
+                <h2>Выбор услуг</h2>
+                <form>
+                    <input onclick="displayForm(this.id)" type="radio" name="qwe" id="hair" value="hair">
+                    <label for="hair" id="hair-label">Услуги парикмахера</label>
+                    <input onclick="displayForm(this.id)" type="radio" name="qwe" id="skin" value="skin">
+                    <label for="skin" id="skin-label">Услуги касметолога</label>
+                    <input onclick="displayForm(this.id)" type="radio" name="qwe" id="nails" value="nails">
+                    <label for="nails" id="nails-label">Услуги мастера ногтевого сервиса</label>
+                </form>
+            </div>
+            <div class="section_1 section_1-right">
+                <div id="div-hair" style="display: none;">
+                    <h2>Услуги парикмахера</h2>
+                    <form class="service-recording" action="" method="post">
+                        <select class="select" name="" id="" required>
+                            <option value="err">...</option>
+                            <option value="hair-man">Стрижка муржская</option>
+                            <option value="hair-wman">Стрижка женская</option>
+                            <option value="hair-colored">Покраска</option>
+                        </select>
+                        <p>Выберете дату и време на которые хотели бы записаться</p>
+                        <div>
+                            <input type="date" name="date" id="date" required>
+                            <input type="time" name="time" id="" required>
+                        </div>
+                        <input type="submit" value="Записаться">
+                    </form>
+                </div>
+                <div id="div-skin" style="display: none;">
+                    <h2>Услуги касметолога</h2>
+                    <form class="service-recording" action="" method="post">
+                        <select class="select" name="" id="" required>
+                            <option value="err">...</option>
+                            <option value="">Очистка кожи</option>
+                            <option value="">Депиляция волос на теле</option>
+                            <option value="">Удаление татуировок</option>
+                        </select>
+                        <p>Выберете дату и време на которые хотели бы записаться</p>
+                        <div>
+                            <input type="date" name="date" id="date" required>
+                            <input type="time" name="time" id="" required>
+                        </div>
+                        <input type="submit" value="Записаться">
+                    </form>
+                </div>
+                <div id="div-nails" style="display: none;">
+                    <h2>Услуги мастера ногтевого сервиса</h2>
+                    <form class="service-recording" action="" method="post">
+                        <select class="select" name="" id="" required>
+                            <option value="err">...</option>
+                            <option value="">Маникюр</option>
+                            <option value="">Педикюр</option>
+                            <option value="">Покрытие лаком</option>
+                            <option value="">Наращивание</option>
+                        </select>
+                        <p>Выберете дату и време на которые хотели бы записаться</p>
+                        <div>
+                            <input type="date" name="date" id="date" required>
+                            <input type="time" name="time" id="" required>
+                        </div>
+                        <input type="submit" value="Записаться">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_information">
+                <h1>Хотите связатся с нами?</h1>
+                <div><i class="bi bi-geo-alt"></i>
+                    <h3>ул. Щорса, 22</h3>
+                </div>
+                <div><i class="bi bi-envelope"></i>
+                    <h3>cherybeautifuli@gmail.com</h3>
+                </div>
+                <div><i class="bi bi-telephone"></i>
+                    <h3>8-999-999-99-99</h3>
+                </div>
+            </div>
+            <div class="footer_map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2534.0393049077647!2d36.56690831591475!3d50.57063338657852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412641d7865076bb%3A0xa9ea0bb2a8954ca2!2z0YPQuy4g0KnQvtGA0YHQsCwgMjIsINCR0LXQu9Cz0L7RgNC-0LQsINCR0LXQu9Cz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCAzMDgwMjQ!5e0!3m2!1sru!2sru!4v1648216141100!5m2!1sru!2sru"
+                    width="100%" height="469" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script src="app/jQuery.js"></script>
+<script src="app/app.js"></script>
+
+
+</html>

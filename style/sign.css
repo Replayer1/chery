@@ -1,0 +1,43 @@
+main {
+    margin-top: 65px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1{
+    font-size: 40px;
+}
+
+form a{
+    text-decoration: underline;
+    color: #3366BB;
+}
+
+input {
+    width: 250px;
+    margin: 8px;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 0px;
+    border: 1px solid rgb(197, 197, 197);
+    background: rgb(255, 255, 255);
+}
+
+
+input[type=submit] {
+    transition: .1s;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.05);
+    border: 1px solid rgb(197, 197, 197);
+    background: rgb(183, 255, 177);
+}

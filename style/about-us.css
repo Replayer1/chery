@@ -1,0 +1,368 @@
+main {
+  margin-top: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__section-1 {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: url(../media/img/content/salon.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.main__section-1 div {
+  width: 390px;
+  height: 40%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.85) 400px 1px inset;
+}
+
+.main__section-1 div h1 {
+  font-size: 40px;
+}
+
+.main__section-1 div p {
+  font-size: 18px;
+}
+
+.main__section-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2-connteiner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-2-connteiner h1 {
+  width: 390px;
+  font-size: 40px;
+  margin-top: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.85) 400px 1px inset;
+}
+
+.servise__card {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  text-align: left;
+}
+
+.servise__card-revers {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  text-align: right;
+}
+
+.section-2-img {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.section-2-img button {
+  display: none;
+  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 0px;
+  border: 1px solid rgb(197, 197, 197);
+  background: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.section-2-img button:hover {
+  font-size: 18px;
+  border: 1px solid rgb(197, 197, 197);
+  background: rgb(183, 255, 177);
+}
+
+.section-2-img:hover button {
+  display: flex;
+}
+
+.section-2-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.section-2-text p {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section-2-text-revers {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 15px;
+}
+
+.section-2-text-revers p {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.section-2-img#hair {
+  background: url(../media/img/content/hairCard.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.section-2-img#hair:hover {
+  background: url(../media/img/content/hairCard.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  box-shadow: rgba(0, 0, 0, 0.9) -990px 1px inset;
+}
+
+.section-2-img#skin {
+  background: url(../media/img/content/skinCard.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.section-2-img#skin:hover {
+  background: url(../media/img/content/skinCard.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  box-shadow: rgba(0, 0, 0, 0.9) 990px 1px inset;
+}
+
+.section-2-img#nails {
+  background: url(../media/img/content/nailsCard.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.section-2-img#nails:hover {
+  background: url(../media/img/content/nailsCard.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  box-shadow: rgba(0, 0, 0, 0.9) -990px 1px inset;
+}
+
+.main__section-3 {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__section-3 h1 {
+  font-size: 40px;
+}
+
+.section-3-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.people-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.people-card * {
+  margin: 10px;
+}
+
+.people-card div {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  font-size: 0px;
+  transition: 0.3s;
+}
+
+.people-card div:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.people-card div#hair {
+  background: url(../media/img/content/hairMaster.jpeg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.people-card div#skin {
+  background: url(../media/img/content/beautician.jpg) no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.people-card div#nails {
+  background: url(../media/img/content/nailsMaster.jpeg) no-repeat;
+  background-position: center;
+  background-size: 150%;
+}
+
+.main__section-4 {
+  width: 100%;
+  min-height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #1e1e1e;
+}
+
+.main__section-4 h1 {
+  font-size: 40px;
+}
+.slider {
+  width: 60%;
+  padding: 30px 100px 30px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-item {
+  width: 25%;
+  margin: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.slider-item h1 {
+  color: white;
+}
+
+.slider-item img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1450px) {
+  main {
+    margin-top: 150px;
+  }
+
+  .main__section-2 {
+    border-bottom: 1px solid rgb(198, 198, 198);
+  }
+
+  .servise__card {
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 450px;
+  }
+
+  .section-2-img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .section-2-img button {
+    margin-top: 0;
+  }
+
+  .section-2-text {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+
+  .servise__card-revers {
+    height: 450px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .section-2-text-revers {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+
+  .section-2-img#hair:hover {
+    box-shadow: rgba(0, 0, 0, 0.9) 1px -400px inset;
+  }
+
+  .section-2-img#skin:hover {
+    box-shadow: rgba(0, 0, 0, 0.9) 1px -400px inset;
+  }
+
+  .section-2-img#nails:hover {
+    box-shadow: rgba(0, 0, 0, 0.9) 1px -400px inset;
+  }
+
+  .section-3-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+    .slider {
+        padding: 30px 10px 30px 10px;
+    }
+    .slider h1{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .main__section-4 {
+        display: none;
+    }
+}
+
